@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Nerolusi-Icon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nerolusi</title>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full z-50 bg-white px-4 transition-all duration-500 pb-2 shadow-md" id="main-header">
+      <div class="mx-auto max-w-screen-lg xl:max-w-screen-xl flex justify-between items-center h-20 relative">
+        <!-- Logo -->
+        <a href="#" class="flex items-center font-black z-50">
+          <img src="./img/Nerolusi-Logo.png" alt="Logo" class="w-32" />
+        </a>
+
+        <!-- Hidden checkbox toggle -->
+        <input type="checkbox" id="navbar-open" class="peer hidden" />
+
+        <!-- Hamburger icon -->
+        <label for="navbar-open" class="cursor-pointer sm:hidden z-50">
+          <svg class="w-7 h-7 stroke-current text-white-purple" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+        <nav
+          class="fixed top-0 left-0 h-screen w-[60%] bg-nero-gray-200 text-white transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-200 sm:static sm:translate-x-0 sm:flex justify-center sm:items-center sm:h-auto sm:bg-transparent sm:w-auto sm:text-white z-40"
+        >
+          <ul class="flex flex-col gap-y-6 p-6 pt-24 sm:flex-row sm:gap-x-8 sm:p-0 sm:pt-4 sm:items-center mt-2">
+            <li><a href="#home" class="text-white sm:text-black hover:text-gray-500 transition-all duration-400 font-semibold text-sm md:text-[0.7rem] lg:text-sm">Beranda</a></li>
+            <li><a href="#products" class="text-white sm:text-black hover:text-gray-500 transition-all duration-400 font-semibold text-sm md:text-[0.7rem] lg:text-sm">Produk</a></li>
+            <li><a href="#solutions" class="text-white sm:text-black hover:text-gray-500 transition-all duration-400 font-semibold text-sm md:text-[0.7rem] lg:text-sm">Layanan</a></li>
+            <li><a href="#testimonials" class="text-white sm:text-black hover:text-gray-500 transition-all duration-400 font-semibold text-sm md:text-[0.7rem] lg:text-sm">Testimoni</a></li>
+            <li><a href="#mitra" class="text-white sm:text-black hover:text-gray-500 transition-all duration-400 font-semibold text-sm md:text-[0.7rem] lg:text-sm">Mitra</a></li>
+            <!-- Button -->
+            <div class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-2 pr-16 sm:pr-0">
+              <button class="bg-nero-green-800 py-2 px-4 rounded-3xl text-white font-bold hover:bg-green-700 transition-colors duration-300 text-xs md:text-[0.7rem] lg:text-sm">
+                <a href="https://www.xendit.co/en-th/">Join Kelas!</a>
+              </button>
+              <button class="bg-nero-green-200 py-2 px-4 rounded-3xl text-white font-bold hover:bg-green-500 transition-colors duration-300 text-xs md:text-[0.7rem] lg:text-sm">
+                <a href="https://test2.nerolusi.com">Coba Tryout</a>
+              </button>
+            </div>
+          </ul>
+        </nav>
+        <label
+          for="navbar-open"
+          class="fixed top-0 left-[60%] w-[40%] h-screen bg-black bg-opacity-50 opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity duration-200 sm:hidden z-30 cursor-pointer"
+        ></label>
+      </div>
+    </header>
+
+    <!------------------------------------------------------------------HOME------------------------------------------------------------------>
+    <section class="w-full mt-[8rem]" id="home">
+      <div>
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row w-full h-full items-center justify-between px-4 md:px-10 lg:px-20 text-center md:text-left">
+          <div class="mb-10">
+            <h2 class="text-lg md:text-xl xl:text-[1.7rem] font-bold text-nero-green-900">Bareng Nerolusi</h2>
+            <h2 class="text-lg md:text-xl xl:text-[1.7rem] font-bold mt-3">
+              Bisa Dapat Skor UTBK tinggi, Masuk kampus <br class="hidden xl:block" />
+              impian & bikin orang tua bangga...
+            </h2>
+            <h1 class="text-xl lg:text-xl xl:text-[2.5rem] font-bold my-4 text-nero-green-900">Bahkan kalo kamu mulai dari 0.</h1>
+            <div class="lg:mt-10">
+              <button class="bg-nero-green-800 py-2 px-4 rounded-3xl text-white font-bold hover:bg-green-700 transition-colors duration-300 text-xs md:text-[0.6rem] lg:text-lg">
+                <a href="https://www.xendit.co/en-th/">Join Kelas!</a>
+              </button>
+              <button class="bg-nero-green-200 py-2 px-4 rounded-3xl text-white font-bold hover:bg-green-500 transition-colors duration-300 text-xs md:text-[0.6rem] lg:text-lg ml-2">
+                <a href="https://test2.nerolusi.com">Coba Tryout</a>
+              </button>
+            </div>
+          </div>
+          <div class="mb-0">
+            <img src="./img/Anak-SMA.png" alt="" class="w-[560px]" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------PROBLEMS------------------------------------------------------------------>
+    <section class="w-full bg-nero-green-900 pt-20 md:pt-0">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center md:items-start justify-between px-4 md:px-10 lg:px-20 text-center md:text-left">
+        <div class="">
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-gray-50">Kamu Juga Lagi Ngerasain</h1>
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white md:mt-5"><em class="text-yellow-300">Feeling</em> Ini Ga?...</h1>
+        </div>
+
+        <div class="mt-8 md:mt-16 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12 w-full">
+          <div class="bg-white rounded-2xl aspect-square w-full h-[75%] pt-4 shadow-2xl">
+            <div class="h-[45%] text-left">
+              <div class="h-full flex">
+                <div class="w-[40%] flex items-center justify-center">
+                  <img src="./img/Problems-1.png" alt="" class="p-4 w-[80%] bg-nero-green-900 rounded-[1.6rem]" />
+                </div>
+                <div class="w-[60%] flex items-center px-1">
+                  <p class="text-lg font-bold text-green-700">Bingung Mulai Belajar UTBK Dari Mana</p>
+                </div>
+              </div>
+              <div class="mt-4 px-10">
+                <h2 class="text-xs lg:text-base">Materi UTBK/SNBT itu ga secara langsung diajarin di Sekolah sehingga seringkali bikin bingung para pesertanya.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl aspect-square w-full h-[75%] pt-4 shadow-2xl">
+            <div class="h-[45%] text-left">
+              <div class="h-full flex">
+                <div class="w-[40%] flex items-center justify-center">
+                  <img src="./img/Problems-2.png" alt="" class="p-4 w-[80%] bg-nero-green-900 rounded-[1.6rem]" />
+                </div>
+                <div class="w-[60%] flex items-center px-1">
+                  <p class="text-lg font-bold text-green-700">Butuh Mentor Tapi Harga Bimbel Mahal</p>
+                </div>
+              </div>
+              <div class="mt-4 px-10">
+                <h2 class="text-xs lg:text-base">Dalam Belajar UTBK/SNBT itu akan sangat diuntungkan kalo punya mentor, karena belajarnya jadi terarah, tapi bimbel-bimbel harganya mahal hingga jutaan.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl aspect-square w-full h-[75%] pt-4 shadow-2xl">
+            <div class="h-[45%] text-left">
+              <div class="h-full flex">
+                <div class="w-[40%] flex items-center justify-center">
+                  <img src="./img/Problems-3.png" alt="" class="p-4 w-[80%] bg-nero-green-900 rounded-[1.6rem]" />
+                </div>
+                <div class="w-[60%] flex items-center px-1">
+                  <p class="text-lg font-bold text-green-700">Bingung Mau Ambil Jurusan Apa</p>
+                </div>
+              </div>
+              <div class="mt-4 px-10">
+                <h2 class="text-xs lg:text-base">Tiba-tiba lulus SMA, tapi pengetahuan tentang jurusan-jurusan dikampus minim banget, dan jadi berisiko salah jurusan.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------SOLUTIONS------------------------------------------------------------------>
+    <section class="w-full bg-white mt-16 md:mt-0" id="solutions">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center md:items-start justify-between px-2 md:px-10 lg:px-18 text-center md:text-left">
+        <div class="md:ml-8">
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-900">Kami Hadir Sebagai Solusi Teman Belajar Kamu</h1>
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-700 md:mt-5">Dengan Fasilitas...</h1>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 px-4 mx-auto my-10">
+          <!-- Box 1 -->
+          <div class="rounded-xl p-2 min-h-[320px] flex flex-col justify-between">
+            <div class="border-4 border-green-700 rounded-xl pt-4 px-3 h-full flex flex-col justify-between">
+              <div>
+                <h3 class="text-green-700 font-bold text-[1.3rem] text-center">Simulasi UTBK Asli <br /><span class="text-nero-green-700">Dengan Akurat</span></h3>
+                <p class="text-[0.9rem] mt-2">Menyediakan platform TO dan simulasi soal yang mirip dengan UTBK asli!</p>
+              </div>
+              <img src="img/Feature-1.png" alt="simulasi utbk" class="w-full rounded" />
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="rounded-xl p-2 min-h-[320px] flex flex-col justify-between">
+            <div class="border-4 border-green-700 rounded-xl pt-4 px-3 h-full flex flex-col justify-between">
+              <div>
+                <h3 class="text-nero-green-700 font-bold text-[1.3rem] text-center">
+                  Konsultasi <span class="text-nero-green-900">UTBK <em>Private</em></span> <br />
+                  <span class="text-nero-green-900">dan</span> Kelas Belajar Aktif
+                </h3>
+                <p class="text-[0.9rem] mt-2">Membangun kelas belajar yang interaktif dan SOLID antar murid! Menyediakan layanan konsultasi segala hal terkait UTBK!</p>
+              </div>
+              <img src="img/Feature-2.png" alt="konsultasi" class="w-full rounded" />
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="rounded-xl p-2 min-h-[320px] flex flex-col justify-between gap-y-4">
+            <div class="border-4 border-green-700 rounded-xl p-5">
+              <h3 class="text-green-900 font-bold text-[1.3rem] text-center"><em>Liveclass</em> Kelas RUTIN Dengan<br /><span class="text-nero-green-700">Pengajar Alumni 700+</span></h3>
+              <div class="flex flex-col justify-between">
+                <div>
+                  <p class="text-[0.9rem] mt-2">Menyediakan pembelajaran online dengan kapasitas murid yang kecil agar murid terpantau!</p>
+                </div>
+                <div class="flex justify-center">
+                  <img src="img/Feature-3.png" alt="liveclass" class="mt-4 w-[65%] rounded" />
+                </div>
+              </div>
+            </div>
+
+            <div class="border-4 border-green-700 rounded-xl p-5">
+              <h3 class="text-green-700 font-bold text-[1.3rem] text-center">
+                Video Belajar <span class="text-nero-green-700"><em>On Demand</em></span>
+              </h3>
+              <div class="flex flex-col justify-between">
+                <div>
+                  <p class="text-[0.9rem] mt-2">Menyediakan pembelajaran online dengan kapasitas murid yang kecil agar murid terpantau!</p>
+                </div>
+                <div class="flex justify-center">
+                  <img src="img/Feature-4.png" alt="liveclass" class="mt-4 w-[65%] rounded" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------TUTORS------------------------------------------------------------------>
+    <section class="w-full bg-nero-green-900">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center md:items-start justify-between px-4 md:px-10 lg:px-20 text-center md:text-left">
+        <div class="mt-16 md:mt-0">
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-gray-50">Dengan Pengajar Yang Friendly & Profesional</h1>
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white md:mt-5">Dari Berbagai TOP PTN di Indonesia...</h1>
+        </div>
+
+        <section class="container-tutor my-10 md:my-16 bg-white rounded-[2.5rem]">
+          <div class="card-container-tutor py-4">
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR7.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR2.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR4.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR3.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR6.png" alt="Tutor 1" />
+            </div>
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR5.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR8.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR10.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR11.png" alt="Tutor 1" />
+            </div>
+
+            <!-- Card Tutor 1 -->
+            <div class="card-tutor">
+              <img src="./img/Tutor/TUTOR12.png" alt="Tutor 1" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------REGISTRATION------------------------------------------------------------------>
+    <section class="w-full bg-white mt-20 md:mt-0">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center md:items-start justify-between px-4 md:px-10 lg:px-20 text-center md:text-left mb-20 md:mb-32">
+        <div class="md:ml-8">
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-900">Pendaftaran Hanya Dengan 5 Menit,</h1>
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-700 md:mt-5">Kamu Bisa Langsung Mulai Belajar...</h1>
+        </div>
+
+        <div class="flex flex-col items-center md:flex-row w-full justify-between items-start mt-10 md:mt-20 lg:px-20 xl:px-40">
+          <!-- Gambar kiri -->
+          <div class="relative w-[19rem] md:w-[22rem]">
+            <img src="./img/Registration-1.png" alt="" class="w-full" />
+            <a href="https://wa.me/message/XX2V7NDSH4EGI1"class="absolute bottom-14 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-[0.5rem] shadow-md hover:bg-gray-700 transition duration-300 xl:text-[1.4rem] font-bold">
+              Kontak <i class="fab fa-whatsapp"></i></a>
+          </div>
+
+          <!-- Garis vertikal -->
+          <div class="w-1 bg-nero-green-800 h-[22.5rem] mx-10 hidden md:block"></div>
+          <div class="w-1 bg-nero-green-800 h-[5rem] mx-10 block md:hidden"></div>
+
+          <!-- Gambar kanan -->
+          <div class="relative w-[19rem] md:w-[22rem]">
+            <img src="./img/Registration-2.png" alt="" class="w-full" />
+            <a href="https://www.xendit.co/en-th/" class="absolute bottom-14 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-2 rounded-[0.5rem] shadow-md hover:bg-gray-700 transition duration-300 xl:text-[1.4rem] font-bold">
+              Daftar <i class="fas fa-pen-to-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------PACKAGE------------------------------------------------------------------>
+    <section class="w-full bg-nero-green-900 pt-10 md:pt-0" id="products">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center lg:items-start justify-between px-2 md:px-10 lg:px-20 text-center md:text-left">
+        <div class="mt-5">
+          <h1 class="text-lg md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white md:mt-5">Paket Dimulai Dari 300k-an aja...</h1>
+          <h1 class="text-lg md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-gray-50 md:mt-5">Bimbel Online UTBK Dengan Harga Paling Terjangkau</h1>
+        </div>
+
+        <div class="flex justify-center w-full mt-10 md:mt-16">
+          <div class="relative w-[58rem]">
+            <!-- Gambar -->
+            <img class="w-full" src="./img/Package.png" alt="" />
+
+            <!-- Tombol di atas kanan -->
+            <div class="absolute top-4 md:top-40 right-4 md:right-2 bg-black bg-opacity-70 md:bg-opacity-80 text-white px-4 py-2 rounded-md">
+              <div class="flex justify-center mb-2">
+                <img class="w-[4rem] md:w-[8rem] bg-white rounded-lg p-1" src="./img/Nerolusi-Logo.png" alt="" />
+              </div>
+              <h1 class="text-center font-bold leading-tight">
+                GO-TBK
+                <span class="block text-xs font-light">hingga UTBK</span>
+              </h1>
+
+              <h1 class="text-2xl md:text-4xl font-bold my-3">Rp 349.000</h1>
+              <div class="flex justify-center">
+                <button class="bg-green-500 text-white px-4 py-1 rounded-[0.5rem] shadow-md hover:bg-green-700 transition duration-300 text-sm md:text-lg font-bold">Daftar <i class="fas fa-pen-to-square"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white rounded-t-full h-[5.2rem] hidden md:block">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-white hidden md:block">
+        <h1></h1>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------TESTIMONIALS------------------------------------------------------------------>
+    <section class="w-full bg-white mt-20 md:mt-0" id="testimonials">
+      <div class="max-w-screen-2xl mx-auto flex flex-col w-full h-full items-center md:items-start justify-between px-4 md:px-10 lg:px-20 text-center md:text-left">
+        <div class="">
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-900">Para Alumni Merasakan Dampaknya</h1>
+          <h1 class="text-xl md:text-[1.8rem] lg:text-[2.4rem] font-bold text-nero-green-700 md:mt-5">Setelah Belajar Dengan Nerolusi...</h1>
+        </div>
+
+        <div class="container-testimonial md:mt-10">
+          <div class="testimonial-container2">
+            <!-- Row 1 -->
+            <div class="testimonial-row">
+              <div class="testimonial-card2">
+                <img src="./img/Testimoni/yasmin.jpg" alt="Yasmin" />
+                <div class="content2">
+                  <h3 class="font-semibold">Yasmin</h3>
+                  <span>Kedokteran UNPAD 2024 / Jalur SNBT</span>
+                  <p>“SEMUA materi yang diajarin ke aku mudah banget ditangkap!”</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card2">
+                <img src="./img/Testimoni/Djordan.jpg" alt="Ica" />
+                <div class="content2">
+                  <h3 class="font-semibold">Djordan</h3>
+                  <span>Teknik Mesin UNS 2024 / Jalur SNBT</span>
+                  <p>“Materinya terstruktur dan banyak trik cepat yang diajarin sama kakak-kakak mentor”</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="testimonial-row">
+              <div class="testimonial-card2">
+                <img src="./img/Testimoni/Firyal2.jpg" alt="Rendy" />
+                <div class="content2">
+                  <h3 class="font-semibold">Firyal</h3>
+                  <span>Ilmu Kelautan UNBRAW 2024 / Jalur SNBT</span>
+                  <p>“Fleksibel, cocok untuk aku yang jadwalnya padet. mentornya juga sabar dan ramah BANGET”</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card2">
+                <img src="./img/Testimoni/Zulfa2.jpg" alt="Amira" />
+                <div class="content2">
+                  <h3 class="font-semibold">Zulfa</h3>
+                  <span>Kelautan dan Perikanan UPI 2024 / Jalur SNBT</span>
+                  <p>“Suasana belajar di Nerolusi kondusif banget dan seru!”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header1">
+            <p class="p-custom">dan masih banyak lagi...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 md:rounded-t-full h-[5.2rem]">
+        <h1></h1>
+      </div>
+      <!-- Nempel langsung -->
+      <div class="w-full bg-nero-green-900 block">
+        <div class="text-center md:text-left md:pl-24 pb-16">
+          <h1 class="text-lg md:text-2xl lg:text-[2.4rem] font-bold text-nero-gray-50">UTBK Semakin Dekat,</h1>
+          <h1 class="text-lg md:text-2xl lg:text-[2.4rem] font-bold text-white md:mt-5">Jangan Tunggu Sampai Nyesel. Mulai Sekarang!</h1>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------FOOTER------------------------------------------------------------------>
+    <footer class="bg-[#2f3a4e] text-white py-20">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Logo dan Sosial -->
+          <div class="flex flex-col items-start md:items-start gap-4">
+            <img src="./img/Nerolusi-Logo.png" alt="Logo Nerolusi" class="w-20" />
+            <p class="text-sm text-gray-300">© 2023 Nerolusi<br />All rights reserved.</p>
+            <div class="flex gap-4 mt-2">
+              <a href="#"><i class="fab fa-instagram text-2xl hover:text-pink-400"></i></a>
+              <a href="#"><i class="fab fa-tiktok text-2xl hover:text-white"></i></a>
+            </div>
+          </div>
+
+          <!-- Get in Touch -->
+          <div class="text-sm">
+            <h3 class="text-white font-semibold mb-2">Get in Touch</h3>
+            <p class="text-gray-300">
+              Cluster Ambassador II Blok D16,<br />
+              Perumahan Bukit Dago, Kec. Gunung Sindur,<br />
+              Kabupaten Bogor, Jawa Barat 16340.
+            </p>
+            <p class="mt-2 text-gray-300">cpnerolusi@gmail.com</p>
+            <p class="text-gray-300">+62 855 9140 2079</p>
+          </div>
+
+          <!-- Learn More -->
+          <div class="text-sm">
+            <h3 class="text-white font-semibold mb-2">Learn More</h3>
+            <ul class="text-gray-300 space-y-1">
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Terms of Use</a></li>
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
